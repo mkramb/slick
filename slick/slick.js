@@ -6,7 +6,7 @@
 |___/_|_|\___|_|\_(_)/ |___/
                    |__/
 
- Version: 1.5.14
+ Version: 1.5.15
   Author: Ken Wheeler
  Website: http://kenwheeler.github.io
     Docs: http://kenwheeler.github.io/slick
@@ -1743,7 +1743,7 @@
             var trackWidth = Math.ceil((_.slideWidth * _.$slideTrack.children('.slick-slide').length));
 
             (_.options.slidesGutter > 0) ?
-                _.$slideTrack.width(trackWidth + (_.options.slidesGutter * _.$slides.length)) :
+                _.$slideTrack.width(trackWidth + (_.options.slidesGutter * _.$slides.length) + _.options.slidesGutter) :
                 _.$slideTrack.width(trackWidth);
 
         } else if (_.options.variableWidth === true) {
